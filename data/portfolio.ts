@@ -80,7 +80,7 @@ export const portfolioData: PortfolioData = {
       id: "3",
       title: "AQI index prediction system for travel advisory",
       description:
-        "An AI-powered content generation tool that uses GPT-4 to create blog posts, social media content, and marketing copy.",
+        "A machine Learning predictive model helping travelors ",
       image: "/images/projects/project-3.webp",
       tags: ["Python", "FastAPI", "OpenAI", "React", "TailwindCSS"],
       // liveUrl removed
