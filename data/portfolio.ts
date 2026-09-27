@@ -7,7 +7,7 @@ export const portfolioData: PortfolioData = {
     tagline: "Building digital experiences that make a difference",
     bio: "Professional working on enterprise solutions across Generative AI, backend development, and automation. Experienced with Python, LLMs, RAG, REST APIs, and workflow automation, with a focus on building practical, scalable AI-driven applications.",
     email: "yashsinha2809@gmail.com",
-    location: "Lucknow, India",
+    location: "Pune,India",
     avatar: "/images/profile/avatar.png",
     resumeUrl: "/resume.pdf",
   },
