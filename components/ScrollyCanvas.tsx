@@ -5,7 +5,7 @@ import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-mot
 
 const FRAME_COUNT = 144;
 const FRAME_PREFIX = "/sequence/frame_";
-const FRAME_SUFFIX = "_delay-0.041s.png";
+const FRAME_SUFFIX = "_delay-0.041s.webp";
 
 const pad = (num: number, size: number) => {
   let s = num + "";
