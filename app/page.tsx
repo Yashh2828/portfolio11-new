@@ -1,5 +1,4 @@
 import { Hero } from "@/components/sections/hero";
-import ScrollyCanvas from "@/components/ScrollyCanvas";
 import { Experience } from "@/components/sections/experience";
 import { Projects } from "@/components/sections/projects";
 import { Skills } from "@/components/sections/skills";
@@ -10,7 +9,6 @@ import { SectionDivider } from "@/components/layout/section-divider";
 export default function Home() {
   return (
     <>
-      <ScrollyCanvas />
       <Hero />
       <Experience />
       <SectionDivider variant="aurora" />

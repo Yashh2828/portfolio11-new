@@ -3,9 +3,9 @@ import { PortfolioData } from "@/types";
 export const portfolioData: PortfolioData = {
   personal: {
     name: "Yash Sinha",
-    title: "AI Enthusiast | Software Engineer",
+    title: "Software Engineer",
     tagline: "Building digital experiences that make a difference",
-    bio: "A recent B.Tech graduate focused on AI/ML and Backend Development, building intelligent applications with Python, FastAPI, TensorFlow, and MongoDB. My work spans machine learning, RAG systems, and scalable backend APIs, with a growing interest in Computer Vision and AI Agents. I enjoy transforming ideas into practical AI solutions and continuously exploring emerging technologies.",
+    bio: "Professional working on enterprise solutions across Generative AI, backend development, and automation. Experienced with Python, LLMs, RAG, REST APIs, and workflow automation, with a focus on building practical, scalable AI-driven applications.",
     email: "yashsinha2809@gmail.com",
     location: "Lucknow, India",
     avatar: "/images/profile/avatar.png",
@@ -22,6 +22,22 @@ export const portfolioData: PortfolioData = {
   experiences: [
     {
       id: "1",
+      role: "Software Development Intern",
+      company: "Calsoft",
+      companyLogo: "/images/companies/calsoft.png",
+      period: "Aug 2026 ",
+      location: "Pune, India",
+      summary:
+        "Working on AI-driven solutions, automation, Python development, and backend technologies to support enterprise projects",
+      highlights: [
+        "Developed AI and backend solutions using Python, REST APIs, and modern software engineering practices for enterprise applications.",
+        "Built and integrated Generative AI solutions using LLMs, prompt engineering, RAG pipelines, and API-based workflows.",
+        "Designed automation workflows to streamline business processes and improve operational efficiency.",
+      ],
+      technologies: ["Python", "NumPy", "Pandas", "LLMs", "Prompt Engineering", "Gen AI", "RAG"],
+    },
+    {
+      id: "2",
       role: "Gen AI Intern",
       company: "Hexaware Technologies",
       companyLogo: "/images/companies/Hexaware.svg",
@@ -34,10 +50,10 @@ export const portfolioData: PortfolioData = {
         "Developed intelligent automation workflows using UiPath, including RE Framework, queues, Orchestrator, and web/data scraping.",
         "Engineered automation solutions integrating RAG, LLMs, and APIs workflows to enhance business processes and decision-making.",
       ],
-      technologies: ["Python", "NumPy", "Pandas", "LLMs", "Prompt Engineering", "Gen AI","RAG"],
+      technologies: ["Python", "NumPy", "Pandas", "LLMs", "Prompt Engineering", "Gen AI", "RAG"],
     },
     {
-      id: "2",
+      id: "3",
       role: "Software Development Intern",
       company: "Uttar Pradesh Metro Rail Corporation (UPMRC)",
       companyLogo: "/images/companies/UPMRC.svg",
@@ -50,7 +66,7 @@ export const portfolioData: PortfolioData = {
         "Integrated MongoDB with optimized indexing strategies to improve data retrieval efficiency.",
         "Designed real-time dashboards for ticket monitoring, status tracking, and analytics.",
       ],
-      technologies: ["Python","Flask", "MongoDB", "REST APIs", "Analytics Dashboards", "Indexing","RBAC"],
+      technologies: ["Python", "Flask", "MongoDB", "REST APIs", "Analytics Dashboards", "Indexing", "RBAC"],
     },
   ],
   projects: [
@@ -104,7 +120,7 @@ export const portfolioData: PortfolioData = {
       description:
         "An AI-powered wedding planner agent that helps couples plan their wedding efficiently, managing tasks, budgets, and vendor communications.",
       image: "/images/projects/project-5.webp",
-      tags: ["Python","AI Agent", "Langchain"],
+      tags: ["Python", "AI Agent", "Langchain"],
       // liveUrl removed
       codeUrl: "https://github.com/Yashh2828/wedding-planner-agent",
       featured: false,
@@ -125,12 +141,13 @@ export const portfolioData: PortfolioData = {
     {
       category: "Languages",
       skills: [
-       
+
         { name: "Python", icon: "code", level: "intermediate" },
+        { name: "Java", icon: "code", level: "beginner" },
         { name: "SQL", icon: "database", level: "intermediate" }
       ],
     },
-     
+
     {
       category: "Frameworks",
       skills: [
@@ -141,23 +158,24 @@ export const portfolioData: PortfolioData = {
         { name: "PyMongo", icon: "layers", level: "beginner" },
         { name: "TensorFlow", icon: "server", level: "beginner" },
         { name: "Keras", icon: "server", level: "beginner" }
-        
+
       ],
     },
     {
       category: "AI Concepts",
       skills: [
-       
+
         { name: "Machine learning", icon: "code", level: "intermediate" },
+        { name: "MCP (Model Context Protocol)", icon: "code", level: "intermediate" },
         { name: "Deep Learning", icon: "code", level: "intermediate" },
         { name: "Neural Networks", icon: "code", level: "intermediate" },
         { name: "RAG", icon: "code", level: "intermediate" },
         { name: "Convolutional Neural Network", icon: "code", level: "beginner" },
-        { name: "Lang Chain", icon: "code", level: "beginner" },        
+        { name: "Lang Chain", icon: "code", level: "beginner" },
         { name: "Computer Vision", icon: "code", level: "beginner" }
       ],
     },
-   
+
     {
       category: "Databases",
       skills: [
@@ -165,18 +183,19 @@ export const portfolioData: PortfolioData = {
         { name: "MongoDB", icon: "database", level: "beginner" },
       ],
     },
-    
+
     {
       category: "Tools",
       skills: [
+        { name: "Virtual Box", icon: "server", level: "beginner" },
         { name: "Git & GitHub", icon: "git-branch", level: "intermediate" },
         { name: "VS Code", icon: "component", level: "intermediate" },
         { name: "Jupyter Notebook", icon: "component", level: "intermediate" },
-        
-        
+
+
       ],
     },
-    
+
   ],
   certifications: [
     {
@@ -202,7 +221,7 @@ export const portfolioData: PortfolioData = {
       id: "3",
       title: "Computer vision Fundamentals",
       issuer: "Google Cloud",
-      issueDate: "Aug 2026",      
+      issueDate: "Aug 2026",
       credentialUrl: "https://www.skills.google/public_profiles/4f0c8e88-850d-4ee8-ba1b-7d3a7ac85408/badges/26219027",
       image: "/images/certifications/google.jpeg",
     },

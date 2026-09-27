@@ -106,10 +106,10 @@ export function Section({
   return (
     <motion.section 
       id={id} 
-      className={cn("py-16 md:py-24 overflow-hidden", className)}
+      className={cn("py-12 sm:py-16 md:py-24 overflow-hidden", className)}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: "-100px", amount: 0.1 }}
+      viewport={{ once: true, margin: "-40px", amount: 0.05 }}
       variants={sectionVariants[animation]}
     >
       <Container>

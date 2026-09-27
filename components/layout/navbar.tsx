@@ -51,7 +51,11 @@ export function Navbar() {
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled ? "glassmorphism shadow-sm" : "bg-transparent"
+        isMobileMenuOpen
+          ? "bg-background/95 backdrop-blur-2xl border-b border-border/80 shadow-xl"
+          : isScrolled
+          ? "bg-background/80 backdrop-blur-xl border-b border-border/50 shadow-sm"
+          : "bg-transparent"
       )}
     >
       <Container>
@@ -75,7 +79,7 @@ export function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            {portfolioData.navigation.map((item, index) => (
+            {portfolioData.navigation.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
@@ -129,20 +133,32 @@ export function Navbar() {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0.25 }}
               className="md:hidden overflow-hidden"
             >
-              <div className="py-4 space-y-2">
+              <div className="py-3 pb-5 space-y-1.5 border-t border-border/60">
                 {portfolioData.navigation.map((item) => (
                   <a
                     key={item.href}
                     href={item.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="block px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground hover:bg-accent rounded-md"
+                    className="block px-4 py-2.5 text-base font-medium text-muted-foreground transition-colors hover:text-foreground hover:bg-accent/80 rounded-lg active:bg-accent"
                   >
                     {item.label}
                   </a>
                 ))}
+                <div className="pt-2 px-2">
+                  <Button size="sm" className="w-full" asChild>
+                    <a
+                      href={portfolioData.personal.resumeUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      Download Resume
+                    </a>
+                  </Button>
+                </div>
               </div>
             </motion.div>
           )}

@@ -11,7 +11,7 @@ interface SectionDividerProps {
 
 export function SectionDivider({ variant = "gradient", className }: SectionDividerProps) {
   return (
-    <div className={cn("relative py-12 overflow-hidden", className)}>
+    <div className={cn("relative py-6 sm:py-10 md:py-12 overflow-hidden", className)}>
       {variant === "wave" && <WaveDivider />}
       {variant === "dots" && <DotsDivider />}
       {variant === "gradient" && <GradientDivider />}

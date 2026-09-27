@@ -37,6 +37,7 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 const categoryColorMap: Record<string, { gradient: string; icon: string; badgeColor: string }> = {
   Languages: { gradient: "from-blue-500/10 to-cyan-500/10", icon: "Code", badgeColor: "bg-blue-500/10 text-blue-700 dark:text-blue-400" },
   Frameworks: { gradient: "from-purple-500/10 to-pink-500/10", icon: "Layers", badgeColor: "bg-purple-500/10 text-purple-700 dark:text-purple-400" },
+  "AI Concepts": { gradient: "from-amber-500/10 to-rose-500/10", icon: "Zap", badgeColor: "bg-amber-500/10 text-amber-700 dark:text-amber-400" },
   Databases: { gradient: "from-green-500/10 to-emerald-500/10", icon: "Database", badgeColor: "bg-green-500/10 text-green-700 dark:text-green-400" },
   Tools: { gradient: "from-orange-500/10 to-red-500/10", icon: "Settings", badgeColor: "bg-orange-500/10 text-orange-700 dark:text-orange-400" },
 };
@@ -125,6 +126,9 @@ export function Skills() {
                         )}
                         {category.category === "Frameworks" && (
                           <Layers className="h-5 w-5 text-primary" />
+                        )}
+                        {category.category === "AI Concepts" && (
+                          <Zap className="h-5 w-5 text-primary" />
                         )}
                         {category.category === "Databases" && (
                           <Database className="h-5 w-5 text-primary" />

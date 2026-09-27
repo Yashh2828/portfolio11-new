@@ -56,7 +56,7 @@ export function Experience() {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-120px" }}
+        viewport={{ once: true, margin: "-40px" }}
         className="relative mx-auto max-w-5xl"
       >
         <motion.div
@@ -82,7 +82,7 @@ export function Experience() {
               <div className="absolute left-0 top-8 hidden h-4 w-4 -translate-x-[7px] rounded-full border border-primary/40 bg-background shadow-md md:block" />
 
               <Card className="group overflow-hidden border-border/60 bg-card/80 backdrop-blur-sm transition-all duration-300 hover:border-primary/40 hover:shadow-xl">
-                <CardContent className="p-6 md:p-8">
+                <CardContent className="p-4 sm:p-6 md:p-8">
                   <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
                     <div className="space-y-4">
                       <div className="flex flex-wrap items-center gap-3">
